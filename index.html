@@ -453,7 +453,7 @@
         // Function to redirect to redeem page
         function redirectToRedeem() {
             const remainingPoints = document.getElementById('remainingPoint').textContent.replace(/,/g, '');
-            const url = `https://hl-steel-industries-sdn-bhd.github.io/Redeem-html-Test2/?returnUrl=${encodeURIComponent(window.location.href)}&name=${encodeURIComponent(CONFIG.employeeName)}&points=${remainingPoints}`;
+            const url = `https://hl-steel-industries-sdn-bhd.github.io/Redeem-html-test2/?returnUrl=${encodeURIComponent(window.location.href)}&name=${encodeURIComponent(CONFIG.employeeName)}&points=${remainingPoints}`;
             window.location.href = url;
         }
 
