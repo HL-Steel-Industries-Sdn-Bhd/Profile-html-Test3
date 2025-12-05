@@ -299,12 +299,12 @@
 
     <div class="container">
         <!-- Hidden Forms for GAS Communication -->
-        <form id="getPointsForm" class="hidden-form" action="YOUR_GAS_WEB_APP_URL" method="GET">
+        <form id="getPointsForm" class="hidden-form" action="https://script.google.com/macros/s/AKfycby27kfUz5aafx4_gdgQ64sv7Ng-cmpo50JlfU-KtTgPtj5hSuxPShKws-xhJ1rmLRYxlQ/exec" method="GET">
             <input type="hidden" name="action" value="getPoints">
             <input type="hidden" name="name" id="employeeName">
         </form>
 
-        <form id="updatePointsForm" class="hidden-form" action="YOUR_GAS_WEB_APP_URL" method="POST">
+        <form id="updatePointsForm" class="hidden-form" action="https://script.google.com/macros/s/AKfycby27kfUz5aafx4_gdgQ64sv7Ng-cmpo50JlfU-KtTgPtj5hSuxPShKws-xhJ1rmLRYxlQ/exec" method="POST">
             <input type="hidden" name="action" value="updatePoints">
             <input type="hidden" name="name" id="updateName">
             <input type="hidden" name="pointsUsed" id="pointsUsed">
@@ -401,7 +401,7 @@
             department: 'Production', // Change this
             position: 'Assistant Supervisor', // Change this
             profilePicture: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjUwIiBmaWxsPSIjRTVFNUU1Ii8+CjxjaXJjbGUgY3g9IjYwIiBjeT0iNDUiIHI9IjIwIiBmaWxsPSIjQkRCREJEIi8+CjxwYXRoIGQ9Ik00MCA5MEM0MCA5MCA0MCAxMTUgNjAgMTE1QzgwIDExNSA4MCA5MCA4MCA5MCIgc3Ryb2tlPSIjQkRCREJEIiBzdHJva2Utd2lkdGg9IjgiLz4KPC9zdmc+Cg==',
-            gasWebAppUrl: 'YOUR_GAS_WEB_APP_URL' // Your GAS Web App URL
+            gasWebAppUrl: 'https://script.google.com/macros/s/AKfycby27kfUz5aafx4_gdgQ64sv7Ng-cmpo50JlfU-KtTgPtj5hSuxPShKws-xhJ1rmLRYxlQ/exec' // Your GAS Web App URL
         };
 
         // Initialize page
@@ -426,7 +426,7 @@
         // Function to get points from Google Apps Script
         function getPointsFromGAS() {
             const form = document.getElementById('getPointsForm');
-            if (CONFIG.gasWebAppUrl !== 'YOUR_GAS_WEB_APP_URL') {
+            if (CONFIG.gasWebAppUrl !== 'https://script.google.com/macros/s/AKfycby27kfUz5aafx4_gdgQ64sv7Ng-cmpo50JlfU-KtTgPtj5hSuxPShKws-xhJ1rmLRYxlQ/exec') {
                 form.action = CONFIG.gasWebAppUrl;
                 form.submit();
             }
